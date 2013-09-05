@@ -1,8 +1,6 @@
 # lita-xmpp
 
-[![Build Status](https://travis-ci.org/jmazzi/lita-xmpp.png?branch=master)](https://travis-ci.org/jmazzi/lita-xmpp)
-[![Code Climate](https://codeclimate.com/github/jmazzi/lita-xmpp.png)](https://codeclimate.com/github/jmazzi/lita-xmpp)
-[![Coverage Status](https://coveralls.io/repos/jmazzi/lita-xmpp/badge.png)](https://coveralls.io/r/jmazzi/lita-xmpp)
+WIP, probably has some bugs.
 
 **lita-xmpp** is an adapter for [Lita](https://github.com/jimmycuadra/lita) that allows you to use the robot with [HipChat](https://www.hipchat.com/).
 
