@@ -11,6 +11,7 @@ module Lita
         end
 
         def private_message(client)
+          return
           client.add_message_callback do |m|
             next if m.type == :error || m.body.nil?
             user = user_by_jid(m.from)
