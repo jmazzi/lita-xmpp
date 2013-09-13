@@ -51,7 +51,7 @@ module Lita
         private
 
         def jid_without_domain(jid)
-          jid.to_s.sub(/@.*/, '')
+          jid.to_s.downcase.sub(/@.*/, '')
         end
 
         def create_user(user_data)
