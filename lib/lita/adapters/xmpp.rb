@@ -1,5 +1,6 @@
 require "lita"
 require "lita/adapters/xmpp/html_message"
+require "lita/adapters/xmpp/notify_room"
 require "lita/adapters/xmpp/connector"
 
 module Lita
