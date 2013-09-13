@@ -69,6 +69,7 @@ module Lita
         end
 
         def user_by_name(name)
+          name = name.to_s.downcase
           Lita.logger.info("Looking up user with name: #{name}.")
           items = roster.items.detect { |jid, item| jid_without_domain(jid) == name }
 
