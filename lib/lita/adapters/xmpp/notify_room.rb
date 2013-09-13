@@ -17,7 +17,7 @@ module Lita
       def send_message_to_room(string, room)
         muc_domain = Lita.config.adapter.muc_domain
         target     = Source.new(nil, "#{room}@#{muc_domain}")
-        robot.send_message(target, message)
+        robot.send_message(target, string)
       end
 
       def create_raw_message(string)
