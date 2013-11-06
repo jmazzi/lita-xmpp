@@ -3,7 +3,7 @@ module Lita
     module NotifyRoom
       def send_html_message_to_room(string, room)
         muc_domain = Lita.config.adapter.muc_domain
-        target     = Source.new(nil, "#{room}@#{muc_domain}")
+        target     = Source.new(room: "#{room}@#{muc_domain}")
         adapter    = robot.instance_variable_get('@adapter')
 
         begin
@@ -16,7 +16,7 @@ module Lita
 
       def send_message_to_room(string, room)
         muc_domain = Lita.config.adapter.muc_domain
-        target     = Source.new(nil, "#{room}@#{muc_domain}")
+        target     = Source.new(room: "#{room}@#{muc_domain}")
         robot.send_message(target, string)
       end
 
