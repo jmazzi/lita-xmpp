@@ -2,7 +2,7 @@
 
 WIP, probably has some bugs.
 
-**lita-xmpp** is an adapter for [Lita](https://github.com/jimmycuadra/lita) that allows you to use the robot with [HipChat](https://www.hipchat.com/).
+**lita-xmpp** is an adapter for [Lita](https://github.com/jimmycuadra/lita) that allows you to use the robot with XMPP.
 
 ## Installation
 
