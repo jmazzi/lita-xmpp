@@ -1,6 +1,6 @@
 # lita-xmpp
 
-WIP, probably has some bugs.
+If it works, cool. If it doesn't, there's always [HipChat](http://hipchat.com).
 
 **lita-xmpp** is an adapter for [Lita](https://github.com/jimmycuadra/lita) that allows you to use the robot with XMPP.
 
