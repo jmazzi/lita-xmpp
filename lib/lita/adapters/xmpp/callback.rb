@@ -14,7 +14,7 @@ module Lita
           client.add_message_callback do |m|
             next if m.type == :error || m.body.nil?
             user = user_by_jid(m.from)
-            source = Source.new(user)
+            source = Source.new(user: user)
             message = Message.new(robot, m.body, source)
             message.command!
             Lita.logger.debug("Dispatching PM to Lita from #{user.id}.")
@@ -29,7 +29,7 @@ module Lita
               next
             else
               user = user_by_name(nick)
-              source = Source.new(user, muc.jid.bare.to_s)
+              source = Source.new(user: user, room: muc.jid.bare.to_s)
               message = Message.new(robot, text, source)
               Lita.logger.debug(
                 "Dispatching message to Lita from #{user.id} in MUC #{muc.jid}."
