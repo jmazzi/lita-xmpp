@@ -39,7 +39,7 @@ module Lita
         def join_rooms(muc_domain, rooms)
           rooms.each do |room_name|
             muc = Jabber::MUC::SimpleMUCClient.new(client)
-            room_jid = normalized_jid(room_name, muc_domain, robot.name)
+            room_jid = normalized_jid(room_name, muc_domain.dup, robot.name)
             mucs[room_jid.bare.to_s] = muc
             register_muc_message_callback(muc)
             Lita.logger.info("Joining room: #{room_jid}.")
